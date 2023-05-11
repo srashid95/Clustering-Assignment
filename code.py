@@ -38,9 +38,8 @@ def err_ranges(x, func, param, sigma):
         low = np.minimum(low, y)
         upper = np.maximum(upper, y)
         
-    return low, upper   
+    return low, upper
 
- 
 
 def cluster_cleanfuel_youth(df, xcolumn, ycolumn, xlabel, ylabel, title):
     """
@@ -120,6 +119,7 @@ def logistics(t, n0, g, t0):
     """
     f = n0 / (1 + np.exp(-g*(t - t0)))
     return f
+
 
 def linfunc(x, a, b):
     y = a*x + b
